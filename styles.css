@@ -26,7 +26,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /*scroll-behavior: smooth;*/
 }
 
 body {
@@ -917,13 +916,13 @@ main {
 
 .reveal {
   opacity: 0;
-  transform: translateY(40px); /* 24px-i 40px etdik ki, daha dərindən gəlsin */
-  filter: blur(8px); /* Blur effektini bir az artırdıq */
+  transform: translateY(40px);
+  filter: blur(8px); 
   transition: 
     opacity 0.5s ease-out, 
     transform 0.5s ease-out, 
     filter 0.5s ease-out;
-  will-change: transform, opacity; /* Performans üçün */
+  will-change: transform, opacity; 
 }
 
 .reveal.visible {
@@ -1036,12 +1035,11 @@ main {
   }
 }
 
-/* İframe-lərin avtomatik fokuslanaraq səhifəni aşağı çəkməsinin qarşısını alır */
 iframe {
   pointer-events: none;
 }
 
-/* Yalnız istifadəçi layihənin üzərinə gələndə (hover) işlək olsun */
 .project-card:hover iframe {
   pointer-events: auto;
 }
+
